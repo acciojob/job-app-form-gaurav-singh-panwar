@@ -1,40 +1,55 @@
+/* styles.css */
 
-/* Your CSS Code here. */
+/* Apply some basic styles */
 body {
-  font-family: sans-serif;
-  margin: 0;
-  padding: 0;
+  font-family: Arial, sans-serif;
+  padding: 20px;
 }
 
 h1 {
   text-align: center;
-  margin-top: 24px;
-  margin-bottom: 24px;
-}
-
-form {
-  width: 500px;
-  margin: 0 auto;
 }
 
 .form-group {
-  margin-bottom: 12px;
+  margin-bottom: 20px;
 }
 
 label {
+  display: block;
   font-weight: bold;
 }
 
-input {
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="date"],
+input[type="password"],
+input[type="url"],
+select {
   width: 100%;
   padding: 8px;
   border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+select {
+  height: 32px;
 }
 
 input[type="submit"] {
-  background-color: #000;
-  color: #fff;
-  padding: 12px;
+  background-color: #4caf50;
+  color: white;
   border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
   cursor: pointer;
 }
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.error {
+  color: red;
+}
+
